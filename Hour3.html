@@ -1,22 +1,23 @@
 <!DOCTYPE html> 
 <html>
 <head> 
-      <title> Fahrenheit from Celsius </title>
-      </head> 
+      <title> Celsius to Fahrenheit </title>
+      <script>
        function calculatetemp (Celsius) {
        var celTemp = Celsius;
        var celToFahr = celTemp * 9 / 5 + 32;
-       document.write("Temperature in Celsius: " + Celsius + "degrees"); 
-       document.write("Temperature in Fahrenheit:" + celToFahr + "degrees"); 
-       alert(message);
+       var message = celTemp + 'degrees Celsius is ' + celToFahr + 'degrees Fahrenheit.';
+       document.write(message);
        }
-      <body>
-        <script> 
-       calculatetemp(60);
-       </script>
-       </body>
-       </html>
-       
+      </script>
+      </head>
+      
+      </body>
+      <script>
+            calculatetemp(40);
+      </script>
+      </body>
+      </html>
        
     
         
