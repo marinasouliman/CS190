@@ -1,15 +1,25 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
-<head> 
-      <title> Hour 5 </title>
-      </head>
-      
-      </body>
-      <script>
-           function Volume (input) {
-       
-       document.write(input);
-       }
-      </script>
-      </body>
-      </html>
+<head>
+<title>Uppercase</title>
+<script>
+function uppercase(input)
+{
+	input = str;
+      str = str.split(" ");
+
+    for (var i = 0; i < str.length; i++) 
+    {
+        str[i] = str[i][0].toUpperCase() + str[i].substr(1);
+    }
+
+	document.write(str.join(" "));
+}
+</script>
+</head>
+<body>
+ <script>
+ uppercase("I hate it here.");
+ </script>
+</body>
+</html>
