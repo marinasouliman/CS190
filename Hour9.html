@@ -3,19 +3,19 @@
 <head>
 <title> To Do List </title> 
 <script> 
-function allComments()
-{ 
-var bodyElement = document getElementsById("myBody"); 
-var all = '';
-for (var i = 0; i < bodyElement.childNodes.length; i++) 
-{
-if (bodyElement.childNodes[i].nodeType == 8)
-{
-all += bodyElement.childNodes[i].nodeValue; 
-} 
-}
-alert(all); 
-}
+      function allComments()
+      { 
+      var bodyElement = document.getElementById("myBody"); 
+      var all = '';
+      for (var i = 0; i < bodyElement.childNodes.length; i++) 
+      {
+      if (bodyElement.childNodes[i].nodeType == 8)
+      {
+      all += bodyElement.childNodes[i].nodeValue; 
+      } 
+      }
+      alert(all); 
+      }
 
 window.onload = allComments; 
 
