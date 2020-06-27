@@ -10,7 +10,7 @@ Dog.prototype = {
     this.name = name;
   },
   say: function(message) {
-    return this.name + ': ' + message;
+    return this.name + ' the dog says: ruff ruff ' + message;
   }
 };
     
@@ -19,7 +19,7 @@ var Pug = Class.create();
 Pug.prototype = Object.extend(new Dog(), {
   // redefine the speak method
   say: function(message) {
-    return this.name + ': ' +  'ruff ruff ' + message;
+    return this.name + ' the pug says: ruff ruff ' + message;
   }
 });
   </script>
