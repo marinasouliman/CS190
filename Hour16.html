@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Draggable - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <style>
+    #draggable1 { width: 150px; height: 150px; padding: 0.5em; }
+    #draggable2 { width: 150px; height: 150px; padding: 0.5em; }
+    #draggable3 { width: 150px; height: 150px; padding: 0.5em; }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#draggable1" ).draggable();
+    $( "#draggable2" ).draggable();
+    $( "#draggable3" ).draggable();
+  } );
+  </script>
+  <script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>
+</head>
+<body>
+ <div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Tab 1</a></li>
+    <li><a href="#tabs-2">Tab 2</a></li>
+    <li><a href="#tabs-3">Tab 3</a></li>
+  </ul>
+  <div id="tabs-1">
+    <div id="draggable1" class="ui-widget-content">
+  <p>Drag me around</p>
+</div>
+  </div>
+  <div id="tabs-2">
+    <div id="draggable2" class="ui-widget-content">
+  <p>Drag me around</p>
+</div>
+     </div>
+  <div id="tabs-3">
+   <div id="draggable3" class="ui-widget-content">
+  <p>Drag me around</p>
+</div></div>
+</div>
+ 
+ 
+</body>
+</html>
