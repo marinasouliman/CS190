@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Manual Unit Testing Examples</title>
+  <link rel="stylesheet" href="qunit.css">
+<script>
+function addTax(subtotal, taxRate)
+{
+var total = subtotal * (1+(taxRate/100));
+return total;
+}
+</script>
+</head>
+<body>
+  <div id="qunit"></div>
+  <div id="qunit-fixture"></div>
+  <script src="qunit.js"></script>
+  <script>
+  QUnit.test( "addTax test", function(assert){
+  assert.equal(addTax(1, 10), 1.1);
+  assert.equal(addTax(5,12), 5.6);
+  assert.equal(addTax(100,17.5), 117.5);
+  });
+  </script>
+</body>
+</html>
+
